@@ -1,0 +1,44 @@
+[
+  {
+    "id": "a11",
+    "image": "../resize/1..png",
+    "name": "Group Training",
+    "about": "My personal training services are meant to provide you with an enjoyable, customized workout routine that will benefit your entire group while you have fun and make memories together.",
+    "price": "15.99"
+  },
+  {
+    "id": "b22",
+    "image": "../resize/2..png",
+    "name": "Nutrition Counselling",
+    "about": "It’s no surprise that proper nutrition is one of the best ways to maintain a healthy lifestyle. GYMGUYZ encourages all of our clients to feel their best by combining a customized personal training program with a healthy nutritional regimen.",
+    "price": "30.50"
+  },
+  {
+    "id": "c33",
+    "image": "../resize/3..png",
+    "name": "Sports Conditioning",
+    "about": "Interested in improving your game? Our personal trainers incorporate the latest research-based methods to help you train and improve your coordination, agility, speed, power, and strength. In addition to fundamental athletic skills.",
+    "price": "50"
+  },
+  {
+    "id": "d44",
+    "image": "../resize/4..png",
+    "name": "Specialty Services",
+    "about": "Whether you’re new to fitness or you’re simply looking for a more exciting workout routine, turn to GYMGUYZ. We can introduce you to kickboxing, a challenging and fun workout that works core muscles and adds variety to endurance and strength training.",
+    "price": "75.25"
+  },
+  {
+    "id": "e55",
+    "image": "../resize/5..png",
+    "name": "Youth & Teen Fitness",
+    "about": "Understanding your own body and learning about the advantages of a proper diet and personal fitness are essential lifelong skills. At GYMGUYZ, our youth and fitness training programs come with many benefits and are customized for each person.",
+    "price": "35.22"
+  },
+  {
+    "id": "f66",
+    "image": "../resize/6..png",
+    "name": "Virtual Personal Training",
+    "about": "GYMGUYZ Virtual Personal Training sessions are designed to fully recreate the in-home or on-site personal training experience, with dedicated one-on-one or small group (2-5 people) instruction for a full hour. These sessions are available in FaceTime, WhatsApp, Zoom or Skype.",
+    "price": "25"
+  }
+]
