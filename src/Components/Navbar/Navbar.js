@@ -1,8 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { signOut } from "firebase/auth";
+import { Link, NavLink } from "react-router-dom";
+import auth from "../../firebase.init";
 import logo from "../../images/1..png";
 
 const Navbar = () => {
+  const [user, loading, error] = useAuthState(auth);
+
+  const handleSignOut = () => {
+    signOut(auth);
+  };
   return (
     <div className="flex items-center justify-between mx-10 my-2">
       <div className="flex items-center">
@@ -12,18 +20,39 @@ const Navbar = () => {
         <p className="font-semibold text-3xl ml-2">Fitness Edge</p>
       </div>
       <div>
-        <Link className="mx-6 font-semibold" to="/">
+        <NavLink
+          className="mx-4 font-semibold px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+          to="/"
+        >
           Home
-        </Link>
-        <Link className="mx-6 font-semibold" to="/blogs">
+        </NavLink>
+        <NavLink
+          className="mx-4 font-semibold px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+          to="/blogs"
+        >
           Blogs
-        </Link>
-        <Link className="mx-6 font-semibold" to="/login">
-          Login
-        </Link>
-        <Link className="mx-6 font-semibold" to="/about">
+        </NavLink>
+        {user ? (
+          <button
+            onClick={handleSignOut}
+            className="mx-4 font-semibold px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+          >
+            Sign Out
+          </button>
+        ) : (
+          <NavLink
+            className="mx-4 font-semibold px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+            to="/login"
+          >
+            Login
+          </NavLink>
+        )}
+        <NavLink
+          className="mx-4 font-semibold px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+          to="/about"
+        >
           About Me
-        </Link>
+        </NavLink>
       </div>
     </div>
   );
