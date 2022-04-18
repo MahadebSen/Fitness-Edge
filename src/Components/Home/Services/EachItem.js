@@ -4,7 +4,7 @@ const EachItem = ({ item }) => {
   const { image, name, about, price } = item;
   return (
     <div className="border-2 p-3 rounded-lg">
-      <div className=" rounded-md h-[490px] flex flex-col">
+      <div className=" rounded-md md:h-[510px] lg:h-[500px] xl:h-[550px] 2xl:h-[620px] flex flex-col">
         <img className="rounded-md" src={image} alt="" />
         <p className="text-xl font-semibold my-2">{name}</p>
         <p className="">{about}</p>

@@ -14,7 +14,7 @@ const Services = () => {
     <div>
       <section>
         <p className="text-center font-semibold text-4xl m-10">Services</p>
-        <div className="grid grid-cols-3 gap-8 mx-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-8 mb-8">
           {services.map((item) => (
             <EachItem key={item.id} item={item}></EachItem>
           ))}
