@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import google from "../../images/Google.png";
 import github from "../../images/Github.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import {
   useSendPasswordResetEmail,
@@ -21,6 +21,10 @@ const Login = () => {
     useSignInWithGithub(auth);
   const [sendPasswordResetEmail, sending, resetError] =
     useSendPasswordResetEmail(auth);
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
 
   const emailRef = useRef("");
   const passwordRef = useRef("");
@@ -58,6 +62,9 @@ const Login = () => {
     }
   };
 
+  if (user || googleUser || githubUser) {
+    navigate(from, { replace: true });
+  }
   return (
     <div className="h-[750px] flex justify-center items-center">
       <div className="px-8 rounded-lg border-2 border-cyan-400 mb-16">
