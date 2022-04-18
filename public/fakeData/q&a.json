@@ -1,0 +1,17 @@
+[
+  {
+    "id": "q11",
+    "question": "Authentication vs. Authorization ?",
+    "answer": "Authentication is a process by which you can validate a user. Like a key, the locked door will open by the right key. That's how a system only grants access to a user who have the right credentials.But Authorization is a process by which the system specify application, data, files a user has access to."
+  },
+  {
+    "id": "q11",
+    "question": "Authentication vs. Authorization ?",
+    "answer": "Authentication is a process by which you can validate a user. Like a key, the locked door will open by the right key. That's how a system only grants access to a user who have the right credentials.But Authorization is a process by which the system specify application, data, files a user has access to."
+  },
+  {
+    "id": "q11",
+    "question": "Authentication vs. Authorization ?",
+    "answer": "Authentication is a process by which you can validate a user. Like a key, the locked door will open by the right key. That's how a system only grants access to a user who have the right credentials.But Authorization is a process by which the system specify application, data, files a user has access to."
+  }
+]
