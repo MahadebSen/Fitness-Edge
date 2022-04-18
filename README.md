@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Fitness-Edge
+
+#Live site: 'https://fitness-edge-4e65f.web.app/'
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
