@@ -1,6 +1,24 @@
 # Fitness-Edge
 
-#Live site: 'https://fitness-edge-4e65f.web.app/'
+##`Live site:` 'https://fitness-edge-4e65f.web.app/'
+
+##`What I have done in this project`
+
+- Create banner
+- Set background image
+- Create protected auth
+- Create footer
+- Create log in from
+
+##`What library i have used`
+
+- React
+- React router
+- Firebase
+- tailwind css
+- Font Awesome icon
+- react toastify
+- react firebase hook
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
