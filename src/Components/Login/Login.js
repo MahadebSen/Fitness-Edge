@@ -42,7 +42,7 @@ const Login = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <p className="font-medium">Or login using</p>
+          <p className="font-medium">Or, login using</p>
         </div>
         <div className="flex justify-center mb-5">
           <img className="w-[65px] my-3 mx-2" src={google} alt="" />
