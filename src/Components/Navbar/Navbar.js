@@ -6,7 +6,7 @@ import auth from "../../firebase.init";
 import logo from "../../images/1..png";
 
 const Navbar = () => {
-  const [user, loading, error] = useAuthState(auth);
+  const [user] = useAuthState(auth);
 
   const handleSignOut = () => {
     signOut(auth);
@@ -21,13 +21,21 @@ const Navbar = () => {
       </div>
       <div>
         <NavLink
-          className="mx-4 font-semibold px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+          className={({ isActive }) =>
+            isActive
+              ? "mx-4 font-semibold text-lg bg-red-600 text-white px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+              : "mx-4 font-semibold text-lg px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+          }
           to="/"
         >
           Home
         </NavLink>
         <NavLink
-          className="mx-4 font-semibold px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+          className={({ isActive }) =>
+            isActive
+              ? "mx-4 font-semibold text-lg bg-red-600 text-white px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+              : "mx-4 font-semibold text-lg px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+          }
           to="/blogs"
         >
           Blogs
@@ -35,20 +43,28 @@ const Navbar = () => {
         {user ? (
           <button
             onClick={handleSignOut}
-            className="mx-4 font-semibold px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+            className="mx-4 font-semibold text-lg px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
           >
             Sign Out
           </button>
         ) : (
           <NavLink
-            className="mx-4 font-semibold px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+            className={({ isActive }) =>
+              isActive
+                ? "mx-4 font-semibold text-lg bg-red-600 text-white px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+                : "mx-4 font-semibold text-lg px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+            }
             to="/login"
           >
             Login
           </NavLink>
         )}
         <NavLink
-          className="mx-4 font-semibold px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+          className={({ isActive }) =>
+            isActive
+              ? "mx-4 font-semibold text-lg bg-red-600 text-white px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+              : "mx-4 font-semibold text-lg px-3 py-2 hover:bg-red-500 hover:text-white rounded-lg"
+          }
           to="/about"
         >
           About Me

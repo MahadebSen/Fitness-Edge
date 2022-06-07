@@ -11,7 +11,7 @@ const EachItem = ({ item }) => {
         <p className="">{about}</p>
         <p className="font-semibold text-xl my-2">${price}</p>
         <Link to="/checkout">
-          <button className="mt-auto self-start border-2 border-blue-500 my-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-white hover:text-blue-600">
+          <button className="md:mt-auto md:self-start border-2 border-blue-500 my-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-white hover:text-blue-600">
             Check Out
           </button>
         </Link>
