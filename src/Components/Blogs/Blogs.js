@@ -2,8 +2,8 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div className="h-[850px]">
-      <div className="border-2 m-3 border-blue-400 px-3 py-2">
+    <div className="h-[850px] max-w-7xl mx-auto">
+      <div className="border-2 m-3 border-blue-400 rounded-xl px-3 py-4">
         <p className="text-lg font-medium">
           1. Authentication vs. Authorization ?
         </p>
@@ -16,7 +16,7 @@ const Blogs = () => {
           data, files a user has access to.
         </p>
       </div>
-      <div className="border-2 m-3 border-blue-400 px-3 py-2">
+      <div className="border-2 m-3 border-blue-400 rounded-xl px-3 py-4">
         <p className="text-lg font-medium">
           2. Why are you using firebase? What other option do you have to
           implement authentication ?
@@ -31,7 +31,7 @@ const Blogs = () => {
           firebase. Okta, Back 4 app, AWS Amplify, Kuzzle, Native Script, etc.
         </p>
       </div>
-      <div className="border-2 m-3 border-blue-400 px-3 py-2">
+      <div className="border-2 m-3 border-blue-400 rounded-xl px-3 py-4">
         <p className="text-lg font-medium">
           3. What other services does firebase provide other then
           authentication?

@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div>
       <section className="bg-img h-[800px] bg-no-repeat bg-cover">
-        <div className="w-[250px] h-[800px] ml-8 flex items-center">
+        <div className="w-[260px] h-[800px] ml-12 md:ml-16 lg:ml-24 xl:ml-36 2xl:ml-44 flex items-center">
           <div>
             <p className="font-extrabold text-7xl">PERSONAL TRAINING</p>
             <p className="font-medium text-xl my-4 text-gray-600">
