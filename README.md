@@ -4,8 +4,8 @@
 
 ##`What I have done in this project`
 
-- Create banner
-- Set background image
+- Protected authentication applied on routes.
+- Active link feature added.
 - Create protected auth
 - Create footer
 - Create log in from
