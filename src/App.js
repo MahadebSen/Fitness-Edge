@@ -10,6 +10,8 @@ import Login from "./Components/Login/Login";
 import Navbar from "./Components/Navbar/Navbar";
 import NotFound from "./Components/NotFound/NotFound";
 import RequireAuth from "./Components/RequireAuth/RequireAuth";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -37,6 +39,7 @@ function App() {
       </Routes>
 
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }

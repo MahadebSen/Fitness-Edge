@@ -9,7 +9,7 @@ const EachItem = ({ item }) => {
         <img className="rounded-md" src={image} alt="" />
         <p className="text-xl font-semibold my-2">{name}</p>
         <p className="">
-          {about.length > 100 ? about.slice(0, 100) + "..." : about}
+          {about.length > 100 ? about.slice(0, 110) + "..." : about}
         </p>
         <p className="font-semibold text-xl my-2">${price}</p>
         <Link to={`/services/${id}`}>
