@@ -80,7 +80,7 @@ const CheckOut = () => {
             required
           />
 
-          <button className="block mx-auto mt-12 border-2 px-5 py-2 rounded-lg bg-blue-500 text-white font-medium text-lg hover:text-black hover:bg-white hover:border-blue-500">
+          <button className="block mx-auto mt-12 border-2 px-5 py-2 rounded-lg bg-blue-500 text-white font-medium text-lg hover:text-black hover:bg-white hover:border-blue-400">
             Place Order
           </button>
         </form>
