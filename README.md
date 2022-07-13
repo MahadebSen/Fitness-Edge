@@ -1,4 +1,4 @@
-# Fitness-Edge
+# Fitness-Edge (Service provider site)
 
 ### Live site: 
 
